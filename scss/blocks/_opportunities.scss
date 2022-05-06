@@ -1,0 +1,114 @@
+.opportunities{
+    &__container{
+        padding-top: 160px;
+    }
+    &__line{
+        position: absolute;
+        background-color: #E5ECF4;
+        border: 10px solid #E5ECF4;
+        width: 1000px;
+        margin-left: -200px;
+        margin-top: 40px;
+        z-index: -1;
+    }
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    &__item{
+        margin: 0;
+        padding: 0;
+        max-width: 350px;
+
+        // &::before{
+        //     content: "";
+        //     display: block;
+        //     background-image: url(../images/tell.svg);
+        //     background-repeat: no-repeat;
+        //     width: 96px;
+        //     height: 96px;
+        //     background-position: center;
+        //     width: 96px;
+        //     height: 96px;
+        //     margin-top: -60px;
+        //     border-radius: 50%;
+        //     margin-bottom: 40px;
+        //     padding-left: 96px;
+        //     background-color: #FCB72B;
+        // }
+    }
+    &__item-center::before{
+        background-image: url(../../images/scooter.svg);
+    }
+    &__item-right::before{
+        background-image: url(../../images/mapet.svg);
+    }
+    &__title{
+        font-family: 'Space Mono';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: var(--heading-color);
+    }
+    &__desc{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: var(--desc-color);
+        max-width: 350px;
+    }
+}
+@media only screen and (min-width: 1440px){
+    .container {
+        max-width: 1146px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .opportunities{
+        &__line{
+            width: 900px;
+        }
+        &__item{
+            max-width: 280px;
+        }
+    }
+}
+
+@media only screen and (max-width: 942px){
+    .opportunities{
+        &__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+        &__line{
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            width: 900px;
+        }
+        &__item{
+            max-width: 398px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin: 0;
+            margin-left: 70px;
+
+        }
+        &__title , &__desc{
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 576px){
+
+
+}

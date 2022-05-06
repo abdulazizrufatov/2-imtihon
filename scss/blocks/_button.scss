@@ -1,0 +1,17 @@
+.site-btn{
+    padding: 14px 39px;
+    border: none;
+    background: #FCB72B;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    border: 3px solid #FCB72B;
+}
+.site-btn:hover{
+    transition: all 0.3s;
+    background: transparent;
+    color: #FCB72B;
+}

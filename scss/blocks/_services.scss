@@ -1,4 +1,5 @@
 .services{
+    padding-bottom: 200px;
     &__box{
         display: flex;
         align-items: center;
@@ -41,6 +42,8 @@
         width: 740px;
         height: 150px;
         background-image: url(../images/services-line-top.png);
+        background-repeat: no-repeat;
+        background-size: 740px 150px;
         display: block;
         position: absolute;
         top: 220px;
@@ -67,6 +70,7 @@
             width: 740px;
             height: 150px;
             background-image: url(../../images/services-line-bottom.png);
+            background-size: 400px 150px;
             display: block;
             background-repeat: no-repeat;
             position: absolute;
@@ -180,6 +184,6 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url(../images/services-line-center@2x.png);
     }
     .services__picture-bottom::after{
-        background-image: url(../../images/services-line-bottom@2x.png);
+        background-image: url(../images/services-line-bottom@2x.png);
     }
 }

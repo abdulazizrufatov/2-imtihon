@@ -888,6 +888,10 @@ img {
   }
 }
 
+.services {
+  padding-bottom: 200px;
+}
+
 .services__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -946,6 +950,8 @@ img {
   width: 740px;
   height: 150px;
   background-image: url(../images/services-line-top.png);
+  background-repeat: no-repeat;
+  background-size: 740px 150px;
   display: block;
   position: absolute;
   top: 220px;
@@ -977,6 +983,7 @@ img {
   width: 740px;
   height: 150px;
   background-image: url(../../images/services-line-bottom.png);
+  background-size: 400px 150px;
   display: block;
   background-repeat: no-repeat;
   position: absolute;
@@ -1088,7 +1095,143 @@ img {
     background-image: url(../images/services-line-center@2x.png);
   }
   .services__picture-bottom::after {
-    background-image: url(../../images/services-line-bottom@2x.png);
+    background-image: url(../images/services-line-bottom@2x.png);
+  }
+}
+
+.footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+.footer__sign-up {
+  background-image: url(../../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer__sign-up-container {
+  padding: 102px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__sign-up-heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #FFFFFF;
+  max-width: 415px;
+}
+
+.footer__sign-up-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 9px 16px;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #E5ECF4;
+  border-radius: 4px;
+}
+
+.footer__sign-up-link + .footer__sign-up-link {
+  margin-left: 18px;
+}
+
+.footer__sign-up-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__appstore-logo {
+  margin-right: 12px;
+  width: 24px;
+  height: 28px;
+}
+
+.footer__link-desc {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.446429px;
+  color: var(--heading-color);
+}
+
+.footer__link-heading {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.892857px;
+  color: var(--heading-color);
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1146px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .footer__sign-up-container {
+    padding: 62px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__sign-up-heading {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__sign-up-container {
+    padding: 88px 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__sign-up-heading {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
